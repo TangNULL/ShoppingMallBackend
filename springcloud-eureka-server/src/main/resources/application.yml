@@ -1,0 +1,30 @@
+#server:
+#  port: 8700
+## 端口自己决定
+## 指定当前eureka客户端的注册地址，也就是eureka服务的提供方，当前配置的服务的注册服务方
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+#    register-with-eureka: false
+#    #自身 不在向eureka注册
+#    fetch-registry: false
+#    #启动时禁用client的注册
+#  instance:
+#    hostname: localhost
+##指定应用名称
+#spring:
+#  application:
+#    name: eureka-server
+
+
+server:
+  port: 8081 #服务注册中心端口号
+eureka:
+  instance:
+    hostname: 127.0.0.1 #服务注册中心IP地址
+  client:
+    registerWithEureka: false #是否向服务注册中心注册自己
+    fetchRegistry: false #是否检索服务
+    serviceUrl: #服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

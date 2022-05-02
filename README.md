@@ -8,3 +8,5 @@ localhost:8084/service-provider/Hello/World?s=1<br/>
 目测前端文件放在gateway的resource下
 
 2222
+
+33333

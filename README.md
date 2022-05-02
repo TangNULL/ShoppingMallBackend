@@ -7,4 +7,4 @@ localhost:8084/service-provider/Hello/World?s=1<br/>
 前端可以这样调用服务	<br/>
 目测前端文件放在gateway的resource下
 
-111111
+2222
